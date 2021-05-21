@@ -1,0 +1,25 @@
+{
+  "name": "devcamper-api",
+  "version": "1.0.0",
+  "description": "DevCamper API From Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imtheknown/devcamper-api.git"
+  },
+  "keywords": [
+    "devcamper",
+    "api",
+    "node",
+    "nodeJS"
+  ],
+  "author": "theknownofficial@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imtheknown/devcamper-api/issues"
+  },
+  "homepage": "https://github.com/imtheknown/devcamper-api#readme"
+}

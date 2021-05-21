@@ -1,9 +1,14 @@
 const express = require('express');
+const dotenv = require('dotenv');
+
+//Load environment variables
+dotenv.config({path:'./config/config.env'});
 
 const app = express();
 
 app.use(express.json());
 
-app.listen('5000', ()=>{
-    console.log('Listening to port 5000');
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, ()=>{
+    console.log(`Server Running in ${process.env.NODE_ENV} mode on port ${PORT}`);
 })

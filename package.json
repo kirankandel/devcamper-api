@@ -32,7 +32,9 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.10",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-geocoder": "^3.27.0",
+    "slugify": "^1.5.3"
   },
   "devDependencies": {
     "eslint": "^7.26.0",

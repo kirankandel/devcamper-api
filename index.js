@@ -10,11 +10,12 @@ connectDB();
 //Route Files
 const bootcamps = require('./routes/bootcamps.route');
 
+colors.enable();
 const app = express();
 
 app.use(express.json());
 
-if(process.env.NODE_ENV === 'development'){
+if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
@@ -28,8 +29,8 @@ const server = app.listen(PORT, () => {
 
 //Handle Unhandled Promise Rejection 
 // eslint-disable-next-line no-unused-vars
-process.on('unhandeldRejection', (err, promise)=>{
+process.on('unhandeldRejection', (err, promise) => {
     console.log(`Error: ${err.message}`.red);
     //Close Server and Exit Process
-    server.close(()=> process.exit(1));
+    server.close(() => process.exit(1));
 })

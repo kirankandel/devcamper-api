@@ -6,7 +6,10 @@
   "scripts": {
     "start": "NODE_ENV=production node index.js",
     "dev": "nodemon index.js",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
   },
   "repository": {
     "type": "git",
@@ -33,7 +36,10 @@
   },
   "devDependencies": {
     "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
     "nodemon": "^2.0.7",
-    "prettier": "2.3.0"
+    "prettier": "^2.3.0"
   }
 }

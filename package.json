@@ -30,7 +30,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^9.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
     "node-geocoder": "^3.27.0",
